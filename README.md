@@ -11,6 +11,8 @@
     <img src="image/curl_time.png" height="400">
 </div>
 
+
+国外使用：
 ```bash
 curl -sSL https://raw.githubusercontent.com/mereithhh/vps-scripts/main/test/curl_time.sh | bash
 ```
