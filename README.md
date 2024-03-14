@@ -7,8 +7,9 @@
 
 ### 网站响应时间测试
 
-<img src="image/curl_time.png" height="400">
-
+<div align="center">
+    <img src="image/curl_time.png" height="400">
+</div>
 ```bash
 curl -sSL https://raw.githubusercontent.com/mereithhh/vps-scripts/main/test/curl_time.sh | bash
 ```
