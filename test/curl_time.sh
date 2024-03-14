@@ -57,7 +57,7 @@ do
   total_time=0
 
   # 执行五次测量
-  for ((i=1; i<=5; i++))
+  for ((i=1; i<=${test_time}; i++))
   do
     # 使用 curl 测量并获取时间，转换为毫秒
     time=$(curl -o /dev/null -s -w '%{time_total}' $site)
