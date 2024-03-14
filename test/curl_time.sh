@@ -124,6 +124,6 @@ done
     else
         echo "没有数据来计算平均时间。"
     fi
-} > summary.log
+} > curltime.log
 
-cat summary.log
+cat curltime.log
