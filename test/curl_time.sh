@@ -48,7 +48,7 @@ sites=(
 # 检查并尝试安装 curl, bc, awk
 check_install
 
-test_time=5
+
 
 # 遍历网站列表
 for site in "${sites[@]}"
@@ -57,7 +57,7 @@ do
   total_time=0
 
   # 执行五次测量
-  for i in {1..${test_time}}
+  for i in {1..5}
   do
     # 使用 curl 测量并获取时间，转换为毫秒
     time=$(curl -o /dev/null -s -w '%{time_total}' $site)
@@ -67,7 +67,7 @@ do
   done
 
   # 计算平均值
-  average_time=$(echo "scale=2; $total_time / ${test_time}" | bc)
+  average_time=$(echo "scale=2; $total_time / 5" | bc)
   echo -e "${GREEN}平均时间: $average_time ms${NC} for $site"
   echo "----------------------------------"
 
