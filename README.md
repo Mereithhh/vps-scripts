@@ -14,7 +14,7 @@
 
 国外使用：
 ```bash
-curl -sSL https://raw.githubusercontent.com/mereithhh/vps-scripts/main/test/curl_time.sh | bash
+bash <(curl -sL https://raw.githubusercontent.com/mereithhh/vps-scripts/master/test/curl_time.sh) 
 ```
 
 国内使用：
